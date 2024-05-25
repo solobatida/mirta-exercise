@@ -1,0 +1,35 @@
+@import 'base';
+@import '_mixinColors';
+
+html {
+    --first-color: red;
+    --secondary-color: blue;
+}
+
+header {
+    height:150px;
+    background-color: gold;
+    color: var(--base-color);   
+}
+
+main {
+    background-color: var(--base-color);
+}
+
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+
+    @include degraded-colors(red);
+    
+        
+    .box {
+        padding:20px;
+        gap: 10px;
+
+        
+        
+    }
+}

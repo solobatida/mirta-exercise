@@ -1,0 +1,46 @@
+@import 'theme2';
+
+body {
+    margin: 10px;
+}
+
+main {
+    p {
+        padding: 20px;
+    }
+}
+
+header {
+    height:150px;
+    padding: 20px;
+    
+}
+
+.menu {
+    background-color:cadetblue;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left:0;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &Item {
+        flex-basis: auto;
+        text-align: center;
+        padding: 20px;
+
+        &:hover {
+            background-color:darkcyan;
+        }
+    }
+
+    &Link {
+        color: white;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+    }
+}

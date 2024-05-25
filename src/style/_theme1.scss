@@ -1,0 +1,39 @@
+$theme1-bg: red;
+$theme1-important: brown;
+$theme1-warning: pink;
+$theme1-font1: Arial, Helvetica, sans-serif;
+$theme1-font2: "Lucida Console", "Courier New", monospace;
+$theme1-shadow: 0px 3px 2px 3px lightgrey;
+$theme1-border-radius: 5px;
+
+main {
+    .font {
+        &-principal {
+            font-family: $theme1-font1;
+        }
+
+        &-secondary {
+            font-family: $theme1-font2;
+        }
+    }
+}
+
+header {
+    background-color: $theme1-bg;
+    border-radius: $theme1-border-radius;
+    box-shadow: $theme1-shadow;
+    font-family: $theme1-font1;
+}
+
+.important {
+    background-color: $theme1-important;
+}
+
+.warning {
+    background-color: $theme1-warning;
+}
+
+.shadow {
+    border-radius: $theme1-border-radius;
+    box-shadow: $theme1-shadow;
+}

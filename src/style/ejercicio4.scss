@@ -1,0 +1,73 @@
+$colorGreen: darkseagreen;
+
+body {
+    margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+}
+
+main {
+    p {
+        padding: 20px;
+    }
+}
+
+header {
+    height:150px;
+    padding: 20px;
+    
+}
+
+.card {
+    display: inline-grid;
+    padding: 10px;
+    width:280px;
+    grid-row: auto;
+    grid-template-rows: auto 50px auto 30px 50px;
+    grid-template-columns: 60% 40%;
+    gap: 20px 5px;
+    border: 1px solid grey;
+
+    &Image {
+        grid-column: 1 / 3;
+        grid-row: 1;
+
+        img {
+            width: calc(100% - 5px);
+        }
+    }
+
+    &Title {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        font-size: 2em;
+    }
+
+    &Text{
+        grid-column: 1 / 3;
+        grid-row: 3;
+        line-height: 1.5;
+    }
+
+    &Published {
+        &Label{
+            grid-column: 1 / 2;
+            grid-row: 4;
+            text-align: right;
+            color:$colorGreen;
+        }
+
+        &Date{
+            grid-column: 2 / 3;
+            grid-row: 4;
+        }
+    }
+
+    &Button {
+        grid-column: 1 / 3;
+        grid-row: 5;
+        background-color: $colorGreen;
+        color: white;
+        border: none;
+    }
+}

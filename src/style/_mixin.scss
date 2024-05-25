@@ -1,0 +1,29 @@
+@mixin degraded-colors($base-color) {
+    $class-darken: darken-;
+    $class-lighten: lighten-;
+
+    @for $i from 1 through 4 {
+        .box.darken-#{$i} {
+            background-color: $base-color;
+            @include opacity($i, darken);
+        }
+    }
+
+    @for $i from 1 through 4 {
+        .box.lighten-#{$i} {
+            background-color: $base-color;
+            @include opacity($i, lighten);
+        }
+    }
+}
+
+@mixin opacity($counter, $type) {
+    @if $type == darken { 
+        opacity: 50% + $counter * 10%;
+    }
+
+    @if $type == lighten { 
+        opacity: 50% - ($counter * 10%);
+    }
+}
+

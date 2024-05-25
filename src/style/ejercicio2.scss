@@ -1,0 +1,36 @@
+@import 'theme2';
+
+$font-box-shadow: "Lucida Console", "Courier New", monospace;
+
+body {
+    margin: 10px;
+}
+
+main {
+    p {
+        padding: 20px;
+    }
+}
+
+header {
+    height:150px;
+    padding: 20px;
+    
+}
+
+.important, 
+.warning, 
+.shadow {
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.important, 
+.warning {
+    color: white;
+}
+
+.shadow {
+    font-family: $font-box-shadow;
+}

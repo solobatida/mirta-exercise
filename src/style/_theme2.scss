@@ -1,0 +1,44 @@
+$theme2-bg: lightblue;
+$theme2-important: blue;
+$theme2-warning: darkblue;
+$theme2-font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$theme2-font2: 'Times New Roman', Times, serif;
+$theme2-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+$theme2-border-radius: 0;
+
+main {
+    .font {
+        &-principal {
+            font-family: $theme2-font1;
+        }
+
+        &-secondary {
+            font-family: $theme2-font2;
+        }
+    }
+}
+
+header {
+    background-color: $theme2-bg;
+    border-radius: $theme2-border-radius;
+    box-shadow: $theme2-shadow;
+    font-family: $theme2-font1;
+}
+
+.important {
+    background-color: $theme2-important;
+}
+
+.warning {
+    background-color: $theme2-warning;
+}
+
+.shadow {
+    border-radius: $theme2-border-radius;
+    box-shadow: $theme2-shadow;
+}
+
+.important,
+.warning {
+    font-family: $theme2-font2;
+}
